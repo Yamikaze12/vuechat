@@ -1,0 +1,177 @@
+:root{
+	--PrimariColor:#D24D57;
+}
+html, body{
+    height: 100%;
+	width: 100%;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    align-items: center;
+    padding-bottom: 40 px;
+    background: url(/src/assets/backgroud/background.jpg);
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Login & Register */
+#loreg{
+	font-weight: 700;
+	font-size: 25px;
+	color: var(--PrimariColor);
+	text-align: center;
+}
+.form-auth{
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: 14px auto;
+}
+
+.form-auth .form-floating:focus-within{
+    z-index: 2;
+}
+
+.form-auth input[type="email"]{
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-auth input[type="password"]{
+    margin-bottom: 10px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+/*End Login & Register */
+
+/* Global Button Styles */
+button.animated-button:link, button.animated-button:visited {
+	position: relative;
+	display: block;
+	margin: 30px auto 0;
+	padding: 14px 15px;
+	color: #fff;
+	font-size:14px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	border-radius: 0;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+button.animated-button:link:after, button.animated-button:visited:after {
+	content: "";
+	position: absolute;
+	height: 0%;
+	left: 50%;
+	top: 50%;
+	width: 150%;
+	z-index: -1;
+	-webkit-transition: all 0.75s ease 0s;
+	-moz-transition: all 0.75s ease 0s;
+	-o-transition: all 0.75s ease 0s;
+	transition: all 0.75s ease 0s;
+}
+button.animated-button:link:hover, button.animated-button:visited:hover {
+	color: #FFF;
+	text-shadow: none;
+}
+button.animated-button:link:hover:after, button.animated-button:visited:hover:after {
+	height: 450%;
+}
+button.animated-button:link, button.animated-button:visited {
+	position: relative;
+	display: block;
+	margin: 30px auto 0;
+	padding: 14px 15px;
+	color: #fff;
+	font-size:14px;
+	border-radius: 0;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+/* End Global Button Styles */
+
+/*button*/
+button.animated-button.victoria-two {
+	border: 2px solid var(--PrimariColor);
+    min-width: 300px;
+	color: var(--PrimariColor);
+
+}
+button.animated-button.victoria-two:after {
+	background: var(--PrimariColor);
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+	transform: translateX(-50%) translateY(-50%) rotate(25deg);
+}
+/* end button*/
+
+/*Nabar*/
+.navbar-brand{
+	font-weight: 900;
+	font-size: 30px;
+	color: var(--PrimariColor) !important;
+}
+.nav-link{
+	font-weight: 700;
+	font-size: 20px;
+}
+/*End Nabar*/
+
+/*Room*/
+.cg{
+	background-color: var(--PrimariColor);
+}
+.content{
+	width: 100%;
+	max-width: 330px;
+	padding: 15px;
+	margin: 20% auto;
+}
+/*End Room*/
+
+/*Chat Box*/
+.chat-box{
+	background-color: #a0a0a0;
+	display: flex;
+	flex-direction: column;
+	height: 70vh;
+	overflow: scroll;
+}
+.chat-bubble{
+	background-color: white;
+	margin: 10px 30px;
+	padding: 15px;
+	border-radius: 20px 20px 20px 0;
+}
+.chat-head{
+	font-size: 0.7em;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+/*End Chat Box*/
+
+/* Form */
+.chat-form{
+	padding: 10px;
+	
+}
