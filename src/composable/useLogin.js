@@ -12,7 +12,7 @@ const login = async (email, password) => {
         console.log(res)
         return res
     } catch (err) {
-        console.log(err.value)
+        console.error(err.value)
         error.value = 'intinya mah salah mass'
     }
 

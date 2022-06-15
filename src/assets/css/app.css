@@ -154,7 +154,7 @@ button.animated-button.victoria-two:after {
 	display: flex;
 	flex-direction: column;
 	height: 70vh;
-	overflow: scroll;
+	overflow: auto;
 }
 .chat-bubble{
 	background-color: white;

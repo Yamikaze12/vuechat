@@ -20,7 +20,7 @@ const register = async (name, email, password) => {
         error.value = null
         return res
     } catch (err) {
-        console.log(err.message)
+        console.error(err.message)
         error.value = err.message
     }
 }

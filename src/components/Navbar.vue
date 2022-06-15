@@ -8,12 +8,12 @@
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Admin</a>
+          <a class="nav-link active" aria-current="page" href="#">{{ user.displayName }}</a>
         </li>
         </ul>
         <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#">Log Out</a>
+          <a class="nav-link" href="#" @click="handleLogout">Log Out</a>
         </li>
       </ul>
     </div>
@@ -22,8 +22,23 @@
 </template>
 
 <script>
-export default {
+import useLogout from '../composable/useLogout'
+import getUser from '../composable/getUser'
 
+export default {
+    setup(){
+      const { error, logout} = useLogout()
+      const { user } = getUser()
+
+      const handleLogout = async() => {
+        await logout()
+        if (!error.value) {
+          console.log('Udah Logout')
+        }
+      }
+      return { handleLogout, user }
+
+    },
 }
 </script>
 
